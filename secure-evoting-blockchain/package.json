@@ -1,0 +1,20 @@
+{
+  "name": "secure-evoting-blockchain",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Academic blockchain e-voting prototype using Hardhat, Solidity, React, Vite, ethers.js and MetaMask",
+  "scripts": {
+    "chain": "hardhat node",
+    "compile": "hardhat compile",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "test": "hardhat test",
+    "frontend:install": "npm --prefix frontend install",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.17"
+  }
+}
